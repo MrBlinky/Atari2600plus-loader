@@ -19,6 +19,31 @@ To sever the connection of the CARD_TEST and two TX pins between the I/O board
 and mainboard, the pins can be cut off (the easy method) or pushed down into
 the header while heating up their respective solder pads (recommended method).
 
+## Running the loader tool
+
+The loader tool is a python script. To run it, open a commandline window. When
+no Python is installed on your computer (or you don't know) enter:
+
+```
+load2600p comport romfile
+```
+
+or when Python is installed with pySerial on your computer, you can run the
+script directly by entering:
+
+```
+load2600p.py comport romfile
+```
+
+**comport** is the name of the serial port of the USB serial cable/m,odule. To
+find out which serial port is used, go to device manager and check under ports 
+which com port is added when you connect the cable to the computer.
+
+**romfile** is the filename of the Atari 2600 or 7800 romfile. For Atari 2600,
+the rom size must be 2K, 4K, 8K, 16K, 32K and 64K any other size is not
+supported (2600+ firmware v1.00). For Atari 7800 roms, the romsize may vary as
+long as the rom has a 128 byte header with the correct romsize.
+
 ## mod-v1
 
 For this mod an USB to serial cable or USB to serial module and a mechanical

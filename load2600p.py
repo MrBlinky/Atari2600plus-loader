@@ -1,5 +1,5 @@
 ################################################################################
-#  Atari 2600+ ROM loader v1.00                        by Mr. Blinky Dec 2023  #
+#  Atari 2600+ ROM loader v1.01                        by Mr. Blinky Dec 2023  #
 ################################################################################
 
 # requires Python 3 & pyserial to be installed
@@ -42,7 +42,7 @@ if a7800:
 else:
   romsize = len(rom)
   if romsize == 2048:
-      rom += rom
+      rom = rom + rom
       romsize += romsize
   checksize = 3 + romsize
   if not romsize in [4096, 8192, 16384, 32768, 65536]  :
