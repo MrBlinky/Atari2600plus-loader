@@ -44,6 +44,8 @@ the rom size must be 2K, 4K, 8K, 16K, 32K and 64K any other size is not
 supported (2600+ firmware v1.00). For Atari 7800 roms, the romsize may vary as
 long as the rom has a 128 byte header with the correct romsize.
 
+As of Firmware v1.1 Atari 2600 rom sizes that are a multiple of 1K are supported.
+
 ## mod-v1
 
 For this mod an USB to serial cable or USB to serial module and a mechanical
