@@ -59,8 +59,15 @@ Wires are soldered from the severed connections of both the I/O board and
 mainboard to the switch. The TX and RTS signals of the USB serial cable/module
 are also soldered tothe switch.
 
-to do
-
 ## mod-v2
 
-to do
+This mod uses an 'Arduino' Pro Micro (USB-C version) that not only functions as
+a USB to serial adapter but also switches automatically between cartridge and 
+loader mode automatically . In addition to this the power LED can also be made
+to flash when a rom is loaded over USB serial.
+
+When using a USB-C version of the Pro Micro it is important to get a version
+that has a resistor on each side of the USB-C connector (see image). These are
+required for proper USB-C to USB-C cables.
+
+TO DO
